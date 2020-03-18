@@ -237,7 +237,9 @@ nav.NavMenu ul li a{
     display: inline-block;
     text-decoration: none;
     line-height: 50px;
+    cursor: pointer;
 }
+
 .current {
     display: block;
     position: relative;

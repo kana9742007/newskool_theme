@@ -38,12 +38,9 @@
         </div>
     </header>
         <nav id="NavMenu" class="NavMenu">
-            <ul class="menu_ul">
-                <li><a id="home" class="menu_link" href="http://<?php echo($_SERVER['HTTP_HOST']) ?>/">HOME</a></li>
-                <li><a id="about" class="menu_link" href="http://<?php echo($_SERVER['HTTP_HOST']) ?>/about/">ABOUT</a></li>
-                <li><a id="ticket" class="menu_link" href="http://<?php echo($_SERVER['HTTP_HOST']) ?>/ticket/">TICKET</a></li>
-                <li><a id="access" class="menu_link" href="http://<?php echo($_SERVER['HTTP_HOST']) ?>/access/">ACCESS</a></li>
-                <li><a id="staff-wanted" class="menu_link" href="http://<?php echo($_SERVER['HTTP_HOST']) ?>/staff-wanted/">STAFF WANTED</a></li>
-                <li><a id="contact" class="menu_link" href="http://<?php echo($_SERVER['HTTP_HOST']) ?>/contact/">CONTACT</a></li>
+                <?php wp_nav_menu( array(
+                    'theme_location'  => 'global',
+                    'menu_class' => 'menu_ul',
+                    )); ?>
             </ul>
         </nav>
