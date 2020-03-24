@@ -239,14 +239,13 @@ nav.NavMenu ul li a{
     line-height: 50px;
     cursor: pointer;
 }
-
-.current {
+[aria-current="page"] {
     display: block;
     position: relative;
     display: inline-block;
     line-height: 50px;
 }
-.current::after{
+[aria-current="page"]::after{
     bottom: 4px!important;
     left: 0!important;
     content: ''!important;
@@ -255,7 +254,6 @@ nav.NavMenu ul li a{
     background: #333!important;
     transform: inherit!important;
 }
-
 .menu_link :visited{
     color: #313139;
     text-decoration: underline;
